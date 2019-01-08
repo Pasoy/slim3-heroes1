@@ -1,0 +1,69 @@
+<?php $title = 'Edit: ' . $hero->getName()?>
+<?php $style = '../../css/style.css'?>
+
+<?php $itemAll = '/heroes'?>
+<?php $itemAddNew = '/heroes/new'?>
+<?php $itemSearch = '/heroes/search'?>
+
+<?php $addInfo = false ?>
+<?php $header = $title?>
+
+<?php include('layouts/head.php')?>
+<body>
+    <?php include('layouts/navbar.php')?>
+
+
+    <?php include "layouts/othersections.php" ?>
+
+    <div class="section-divider m-wings m-top-only">
+    </div>
+    <div class="container top-spacing">
+        <form class="pure-form" method="post" action="/heroes/edit/<?=$hero->getId()?>">
+            <div class="row">
+                <div class="col-md-6 ab-align-right">
+                    <label class="label-spacer" for="hero_id">ID</label><br />
+                    <label class="label-spacer" for="hero_name">Name</label><br />
+                    <label class="label-spacer" for="hero_role">Role</label><br />
+                    <label class="label-spacer" for="hero_difficulty">Difficulty</label><br />
+                    <label class="label-spacer2" for="hero_description">Description</label><br />
+                    <label class="label-spacer3" for="hero_description_short">Description Short</label><br />
+                    <label class="label-spacer" for="hero_abilities">Abilities</label><br />
+                    <label class="label-spacer" for="hero_nationality">Nationality</label><br />
+                    <label class="label-spacer2" for="hero_health">Health</label><br />
+                    <label class="label-spacer" for="hero_voice">Voice</label><br />
+                    <label class="label-spacer3" for="hero_realname">Real Name</label><br />
+                    <label class="label-spacer" for="hero_age">Age</label><br />
+                    <label class="label-spacer" for="hero_occupation">Occupation</label><br />
+                    <label class="label-spacer3" for="hero_baseofoperations">Base Of Operations</label><br />
+                    <label class="label-spacer" for="hero_affiliation">Affiliation</label><br />
+                    <label class="label-spacer" for="hero_slogan">Slogan</label><br />
+                    <label class="label-spacer" for="hero_story">Story</label><br />
+                    <label class="label-spacer" for="hero_picturename">Picture Name</label><br />
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="<?=$hero->getId()?>" class="top-space" name="hero_id" id="hero_id" type="number" disabled/><br />
+                    <input placeholder="<?=$hero->getName()?>" class="top-space" name="hero_name" id="hero_name" type="text" /><br />
+                    <input placeholder="<?=$hero->getRole()?>" class="top-space" name="hero_role" id="hero_role" type="text" /><br />
+                    <input placeholder="<?=$hero->getDifficulty()?>" class="top-space" name="hero_difficulty" id="hero_difficulty" type="text" /><br />
+                    <input placeholder="<?=$hero->getDescription()?>" class="top-space" name="hero_description" id="hero_description" type="text" /><br />
+                    <input placeholder="<?=$hero->getDescriptionShort()?>" class="top-space" name="hero_description_short" id="hero_description_short" type="text" /><br />
+                    <input placeholder="<?=$hero->getAbilities()?>" class="top-space" name="hero_abilities" id="hero_abilities" type="number" /><br />
+                    <input placeholder="<?=$hero->getNationality()?>" class="top-space" name="hero_nationality" id="hero_nationality" type="text" /><br />
+                    <input placeholder="<?=$hero->getHealth()?>" class="top-space" name="hero_health" id="hero_health" type="number" /><br />
+                    <input placeholder="<?=$hero->getVoice()?>" class="top-space" name="hero_voice" id="hero_voice" type="text" /><br />
+                    <input placeholder="<?=$hero->getRealName()?>" class="top-space" name="hero_realname" id="hero_realname" type="text" /><br />
+                    <input placeholder="<?=$hero->getAge()?>" class="top-space" name="hero_age" id="hero_age" type="number" /><br />
+                    <input placeholder="<?=$hero->getOccupation()?>" class="top-space" name="hero_occupation" id="hero_occupation" type="text" /><br />
+                    <input placeholder="<?=$hero->getBaseOfOperations()?>" class="top-space" name="hero_baseofoperations" id="hero_baseofoperations" type="text" /><br />
+                    <input placeholder="<?=$hero->getAffiliation()?>" class="top-space" name="hero_affiliation" id="hero_affiliation" type="text" /><br />
+                    <input placeholder="<?=$hero->getSlogan()?>" class="top-space" name="hero_slogan" id="hero_slogan" type="text" /><br />
+                    <input placeholder="<?=$hero->getStory()?>" class="top-space" name="hero_story" id="hero_story" type="text" /><br />
+                    <input placeholder="<?=$hero->getPictureName()?>" class="top-space" name="hero_picturename" id="hero_picturename" type="text" /><br />
+                    <input type="submit" class="pure-button" value="Edit" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

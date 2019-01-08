@@ -1,0 +1,601 @@
+@font-face {
+    font-family: FuturaNo2D;
+    src: url("../fonts/FuturaNo2D-normal-600.woff") format('woff');
+         url("../fonts/FuturaNo2D-normal-600.ttf") format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Big Noodle Too;
+    src: url("../fonts/big-noodle-too-normal-400.woff") format('woff'),
+         url("../fonts/big-noodle-too-normal-400.ttf") format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Big Noodle Too;
+    src: url("../fonts/big-noodle-too-italic-400.woff") format('woff');
+         url("../fonts/big-noodle-too-italic-400.ttf") format('ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    background-color: #1b1e21;
+    color: #405275;
+    font-family: FuturaNo2D, Arial, sans-serif;
+}
+
+.heada {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sub-heada {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.top-spacing {
+    margin-top: 45px;
+}
+.top-spacing-s {
+    margin-top: 25px;
+}
+.bottom-spacing {
+    margin-bottom: 45px;
+}
+.bottom-spacing-s {
+    margin-bottom: 25px;
+}
+.top-space {
+    margin-bottom: 10px;
+}
+.text-detail {
+    font-size: 25px;
+    margin: 0;
+}
+.content-box {
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+.content-box-xxs {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.content-box-xs {
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+.content-box-s {
+    padding-bottom: 22px;
+    padding-top: 22px;
+}
+.content-box-b {
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+.content-box-bx {
+    padding-bottom: 144px;
+    padding-top: 144px;
+}
+.content-box.m-tinyPad {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.ab-invert {
+    color: #f0edf2;
+}
+.ab-align-center {
+    text-align: center;
+}
+.ab-align-right {
+    text-align: right;
+}
+.ab-align-left {
+    text-align: left;
+}
+.ab-full-width-container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.ab-max-width-container {
+    width: 100%;
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ab-max-width-container-s {
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ab-max-width-container-xs {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ab-max-width-container-basics {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ab-center-block {
+    display: table;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+@media only screen and (min-width: 992px) {
+    .ab-max-width-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.ab-gap {
+    margin-top: 90px;
+}
+.ab-gap-d {
+    margin-top: -210px;
+}
+.ab-nav-offset {
+    padding-top: 110px;
+}
+.ab-nav-offset-s {
+    padding-top: 55px;
+}
+.ab-nav-offset-xs {
+    padding-top: 20px;
+}
+.ab-nav-offset-o {
+    padding-top: 50px;
+}
+.ab-relative {
+    position: relative;
+}
+.ab-inline-block {
+    display: inline-block;
+}
+.ab-anchor-bottom {
+    bottom: 0;
+    position: absolute;
+}
+.ab-text-shadow {
+    text-shadow: 1px 2px 3px rgba(51, 51, 51, 0.5);
+}
+.ab-subheading {
+    margin-bottom: 18px;
+    color: rgba(189, 189, 189, 0.70);
+    font-size: 2rem;
+    font-family: FuturaNo2D, century gothic, arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-variant: normal;
+    line-height: normal;
+}
+.ab-subheading-s {
+    margin-bottom: 18px;
+    color: rgba(189, 189, 189, 0.70);
+    font-size: 1.8rem;
+    font-family: FuturaNo2D, century gothic, arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-variant: normal;
+    line-height: normal;
+}
+.ab-border-separator {
+    border-bottom: 5px solid hsla(0, 0%, 100%, .5);
+}
+.ab-vertical-middle {
+    vertical-align: middle;
+}
+.ab-limit-width {
+    max-width: 40em;
+}
+.ab-limit-width-b {
+    max-width: 65em;
+}
+
+.intro {
+    background-image: url("../img/bg/bg-ow-1.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.intro-header {
+    color: #D8D8D8;
+    font-family: Big Noodle Too, arial;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    margin: 10px;
+}
+.hero-subcats {
+    color: #111526;
+    font-family: Big Noodle Too, arial;
+    font-size: 40px;
+    font-style: italic;
+    margin: 10px;
+}
+.hero-subcats.subcat-m {
+    font-size: 35px;
+}
+.hero-subcats-result {
+    color: #D8D8D8;
+    font-family: Big Noodle Too, arial;
+    font-size: 30px;
+    margin: 10px;
+}
+.hero-description {
+    background-image: url("../img/bg/bg-w-3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #333;
+}
+.head1 {
+    color: #D8D8D8;
+    font-size: 40px;
+    font-family: Big Noodle Too, impact, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .5px;
+    margin: 10px;
+}
+.blue-heading {
+    color: #405275;
+    background-image: linear-gradient(transparent, transparent);
+    text-shadow: 1px 4px 4px rgba(60, 72, 96, 0.5);
+}
+table {
+    background-color: white !important;
+}
+td, th {
+    text-align: center;
+}
+td .cell {
+    vertical-align: middle;
+}
+.section-divider {
+    position: relative
+}
+.section-divider:after,
+.section-divider:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.section-divider:before {
+    bottom: 100%;
+}
+.section-divider:after {
+    top: 100%;
+}
+.section-divider.m-bottom-only:before,
+.section-divider.m-top-only:after {
+    content: none;
+}
+.section-divider.m-wings:after,
+.section-divider.m-wings:before {
+    height: 30px;
+    background-image: url("../img/wings.png");
+}
+.section-divider.m-wings:after {
+    transform: scaleY(-1)
+}
+.section-divider.m-line:after,
+.section-divider.m-line:before {
+    height: 2px;
+    border: 2px solid rgba(189, 189, 189, 0.7);
+}
+.section-divider.m-inset:before {
+    top: 0;
+    bottom: auto;
+    transform: scaleY(-1);
+}
+.section-divider.m-inset:after {
+    bottom: 0;
+    top: auto;
+    transform: scaleX(1);
+}
+.expand-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+    width: 35px;
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../svg/arrow.svg");
+    background-repeat: no-repeat;
+    filter: invert(20%);
+}
+.right .expand-arrow {
+    right: 0;
+    transform: scaleX(-1);
+}
+.left .expand-arrow {
+    left: 0;
+}
+.transparent-input {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+}
+.hero-icon img {
+    height: 100px;
+    width: 100px;
+}
+.table-hero-icon img {
+    height: 50px;
+    width: 50px;
+}
+.label-spacer {
+    padding-bottom: 18px;
+}
+.label-spacer2 {
+    padding-bottom: 16px;
+}
+.label-spacer3 {
+    padding-bottom: 14px;
+}
+.label-spacer4 {
+    padding-bottom: 12px;
+}
+.star {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/star.png");
+    background-size: cover;
+}
+.star.m-empty {
+    background-position: 0 -32px;
+}
+.icons-roles {
+    height: 80px;
+    padding: 9px;
+}
+.icons-roles-s {
+    height: 50px;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+.animate-img img {
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.animate-img img:hover {
+    transform: scale(1.1);
+    z-index: 30;
+}
+#bg-map {
+    background-attachment: fixed;
+    background-position: center 16%;
+    background-size: cover;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+/* OFFENSE HEROES*/
+#bg-map.bg-doomfist {
+    background-image: url("https://image.ibb.co/hxwEdT/map_doomfist.png");
+}
+#bg-map.bg-genji {
+    background-image: url("https://image.ibb.co/fcMEdT/map_genji.png");
+}
+#bg-map.bg-mccree {
+    background-image: url("https://image.ibb.co/iDhWQ8/map_mccree.png");
+}
+#bg-map.bg-pharah {
+    background-image: url("https://image.ibb.co/mGeNXo/map_pharah.png");
+}
+#bg-map.bg-reaper {
+    background-image: url("https://image.ibb.co/m10kk8/map_reaper.png");
+}
+#bg-map.bg-soldier76 {
+    background-image: url("https://image.ibb.co/m812Xo/map_soldier76.png");
+}
+#bg-map.bg-sombra {
+    background-image: url("https://image.ibb.co/dnFkk8/map_sombra.png");
+}
+#bg-map.bg-tracer {
+    background-image: url("https://image.ibb.co/mOXbso/map_tracer.png");
+}
+/* DEFENSE HEROES*/
+#bg-map.bg-bastion {
+    background-image: url("https://image.ibb.co/fiSy58/map_bastion.png");
+}
+#bg-map.bg-hanzo {
+    background-image: url("https://image.ibb.co/nGSWQ8/map_hanzo.png");
+}
+#bg-map.bg-junkrat {
+    background-image: url("https://image.ibb.co/iAK0JT/map_junkrat.png");
+}
+#bg-map.bg-mei {
+    background-image: url("https://image.ibb.co/kAzZdT/map_mei.png");
+}
+#bg-map.bg-torbjorn {
+    background-image: url("https://image.ibb.co/e41EdT/map_brigitte.png");
+}
+#bg-map.bg-widowmaker {
+    background-image: url("https://image.ibb.co/iwyudT/map_widowmaker.png");
+}
+/* TANK HEROES*/
+#bg-map.bg-dva {
+    background-image: url("https://image.ibb.co/mjZd58/map_dva.png");
+}
+#bg-map.bg-orisa {
+    background-image: url("https://image.ibb.co/irBrQ8/map_orisa.png");
+}
+#bg-map.bg-reinhardt {
+    background-image: url("https://image.ibb.co/gf57yT/map_reinhardt.png");
+}
+#bg-map.bg-roadhog {
+    background-image: url("https://image.ibb.co/kZ40JT/map_roadhog.png");
+}
+#bg-map.bg-winston {
+    background-image: url("https://image.ibb.co/dh0wso/map_winston.png");
+}
+#bg-map.bg-zarya {
+    background-image: url("https://image.ibb.co/chppCo/map_zarya.png");
+}
+/* SUPPORT HEROES*/
+#bg-map.bg-ana {
+    background-image: url("https://image.ibb.co/b70wso/map_ana.png");
+}
+#bg-map.bg-brigitte {
+    background-image: url("https://image.ibb.co/e41EdT/map_brigitte.png");
+}
+#bg-map.bg-lucio {
+    background-image: url("https://image.ibb.co/c1Z0JT/map_lucio.png");
+}
+#bg-map.bg-moira {
+    background-image: url("https://image.ibb.co/gcrfJT/map_moira.png");
+}
+#bg-map.bg-mercy {
+    background-image: url("https://image.ibb.co/nOhWQ8/map_mercy.png");
+}
+#bg-map.bg-symmetra {
+    background-image: url("https://image.ibb.co/hCz0JT/map_symmetra.png");
+}
+#bg-map.bg-zenyatta {
+    background-image: url("https://image.ibb.co/iWX9Co/map_zenyatta.png");
+}
+#fg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: auto;
+
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/* OFFENSE HEROES*/
+#fg.fg-doomfist {
+    background-image: url("https://image.ibb.co/dxJqcy/doomfist_full.png");
+}
+#fg.fg-genji {
+    background-image: url("https://image.ibb.co/kOH5AJ/genji_full.png");
+}
+#fg.fg-mccree {
+    background-image: url("https://image.ibb.co/gH8Z4d/mccree_full.png");
+}
+#fg.fg-pharah {
+    background-image: url("https://image.ibb.co/fqsSPd/pharah_full.png");
+}
+#fg.fg-reaper {
+    background-image: url("https://image.ibb.co/cNVsqJ/reaper_full.png");
+}
+#fg.fg-soldier76 {
+    background-image: url("https://image.ibb.co/bCHu4d/soldier76_full.png");
+}
+#fg.fg-sombra {
+    background-image: url("https://image.ibb.co/dOgyVJ/sombra_full.png");
+}
+#fg.fg-tracer {
+    background-image: url("https://image.ibb.co/jWjJVJ/tracer_full.png");
+}
+/* DEFENSE HEROES*/
+#fg.fg-bastion {
+    background-image: url("https://image.ibb.co/htFE4d/bastion_full.png");
+}
+#fg.fg-hanzo {
+    background-image: url("https://image.ibb.co/grkE4d/hanzo_full.png");
+}
+#fg.fg-junkrat {
+    background-image: url("https://image.ibb.co/bSsu4d/junkrat_full.png");
+}
+#fg.fg-mei {
+    background-image: url("https://image.ibb.co/dT0QAJ/mei_full.png");
+}
+#fg.fg-torbjorn {
+    background-image: url("https://image.ibb.co/eDqE4d/torbjorn_full.png");
+}
+#fg.fg-widowmaker {
+    background-image: url("https://image.ibb.co/mTxixy/widowmaker_full.png");
+}
+/* TANK HEROES*/
+#fg.fg-dva {
+    background-image: url("https://image.ibb.co/iLSixy/dva_full.png");
+}
+#fg.fg-orisa {
+    background-image: url("https://image.ibb.co/eZHGHy/orisa_full.png");
+}
+#fg.fg-reinhardt {
+    background-image: url("https://image.ibb.co/fZTOxy/reinhardt_full.png");
+}
+#fg.fg-roadhog {
+    background-image: url("https://image.ibb.co/gZtCqJ/roadhog_full.png");
+}
+#fg.fg-winston {
+    background-image: url("https://image.ibb.co/gTiqcy/winston_full.png");
+}
+#fg.fg-zarya {
+    background-image: url("https://image.ibb.co/mRKVcy/zarya_full.png");
+}
+/* SUPPORT HEROES*/
+#fg.fg-ana {
+    background-image: url("https://image.ibb.co/b0YCqJ/ana_full.png");
+}
+#fg.fg-brigitte {
+    background-image: url("https://image.ibb.co/i7UwHy/brigitte_full.png");
+ }
+#fg.fg-lucio {
+    background-image: url("https://image.ibb.co/ndpJVJ/lucio_full.png");
+}
+#fg.fg-mercy {
+    background-image: url("https://image.ibb.co/dBxGHy/mercy_full.png");
+}
+#fg.fg-moira {
+    background-image: url("https://image.ibb.co/hXS5AJ/moira_full.png");
+}
+#fg.fg-symmetra {
+    background-image: url("https://image.ibb.co/cjSSPd/symmetra_full.png");
+}
+#fg.fg-zenyatta {
+    background-image: url("https://image.ibb.co/cSCGHy/zenyatta_full.png");
+}
+#fg.fg-doomfist:hover, #fg.fg-genji:hover, #fg.fg-mccree:hover, #fg.fg-pharah:hover, #fg.fg-reaper:hover, #fg.fg-soldier76:hover, #fg.fg-sombra:hover, #fg.fg-tracer:hover, #fg.fg-bastion:hover, #fg.fg-hanzo:hover, #fg.fg-junkrat:hover, #fg.fg-mei:hover, #fg.fg-torbjorn:hover, #fg.fg-widowmaker:hover, #fg.fg-dva:hover, #fg.fg-orisa:hover, #fg.fg-reinhardt:hover, #fg.fg-roadhog:hover, #fg.fg-winston:hover, #fg.fg-zarya:hover, #fg.fg-ana:hover, #fg.fg-brigitte:hover, #fg.fg-lucio:hover, #fg.fg-mercy:hover, #fg.fg-moira:hover, #fg.fg-symmetra:hover, #fg.fg-zenyatta:hover {
+    transform: scale(1.04);
+}

@@ -1,0 +1,99 @@
+<?php $title = $hero->getName()?>
+<?php $style = '../../css/style.css'?>
+<?php $script = '../../js/script.js'?>
+
+<?php $itemAll = '/heroes'?>
+<?php $itemAddNew = '/heroes/new'?>
+<?php $itemSearch = '/heroes/search'?>
+
+<?php include 'layouts/head.php'?>
+<body>
+    <?php include 'layouts/navbar.php'?>
+
+    <?php include 'layouts/herosections.php';?>
+
+    <div class="section-divider m-line">
+        <div id="bg-map" class="container-fluid bg-<?=$hero->getPictureName()?>">
+
+            <div class="container-fluid top-spacing">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="hero-subcats ab-text-shadow">
+
+                            <!-- REAL NAME -->
+                            Real Name:
+                            <span class="hero-subcats-result">
+                                <?=$hero->getRealName()?>
+                            </span><br>
+
+                            <!-- AGE -->
+                            Age:
+                            <span class="hero-subcats-result">
+                                <?=$hero->getAge()?>
+                            </span>
+
+                            <!-- HEALTH -->
+                            Health:
+                            <span class="hero-subcats-result">
+                                <?=$hero->getHealth()?>
+                            </span><br>
+
+                            <!-- NATIONALITY -->
+                            Nationality:
+                            <span class="hero-subcats-result">
+                                <?=$hero->getNationality()?>
+                            </span><br>
+
+                            <!-- VOICE -->
+                            Voice:
+                            <span class="hero-subcats-result">
+                                <?=$hero->getVoice()?>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+
+                        <!-- BIG HERO PICTURE -->
+                        <div id="fg" class="fg-<?=$hero->getPictureName()?>"></div>
+                    </div>
+                    <div class="col-md-4 ab-align-right">
+                        <p class="hero-subcats subcat-m ab-text-shadow animate-img">
+
+                            <!-- DIFFICULTY -->
+                            Difficulty:<br>
+                            <?php if($hero->getDifficulty() === "Easy"): ?>
+                                <span class="star"></span>
+                                <span class="star m-empty"></span>
+                                <span class="star m-empty"></span>
+                            <?php elseif($hero->getDifficulty() === "Normal"): ?>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star m-empty"></span>
+                            <?php elseif($hero->getDifficulty() === "Hard"): ?>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            <?php endif; ?><br>
+
+                            <!-- ROLE -->
+                            Role:
+                            <?php if($hero->getRole() === "Offense"): ?>
+                                <img class="icons-roles-s" src="../../img/roles/offense.png" ondragstart="return false" alt="offense">
+                            <?php elseif($hero->getRole() === "Defense"): ?>
+                                <img class="icons-roles-s" src="../../img/roles/defense.png" ondragstart="return false" alt="defense">
+                            <?php elseif($hero->getRole() === "Tank"): ?>
+                                <img class="icons-roles-s" src="../../img/roles/tank.png" ondragstart="return false" alt="tank">
+                            <?php elseif($hero->getRole() === "Support"): ?>
+                                <img class="icons-roles-s" src="../../img/roles/support.png" ondragstart="return false" alt="support">
+                            <?php endif; ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
