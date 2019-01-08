@@ -13,6 +13,6 @@ $settings['public'] = $settings['root'] . '/public';
 $settings['db']['host']   = "localhost";
 $settings['db']['user']   = "root";
 $settings['db']['pass']   = "";
-$settings['db']['dbname'] = "schmiedjell_owheroes";
+$settings['db']['dbname'] = "slim3db";
 
 return $settings;
